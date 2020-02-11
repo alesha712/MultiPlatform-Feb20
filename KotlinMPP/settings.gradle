@@ -1,0 +1,2 @@
+include ':app', ':SharedModule'
+rootProject.name='My Application'
