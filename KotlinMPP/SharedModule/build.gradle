@@ -1,4 +1,5 @@
 apply plugin: 'kotlin-multiplatform'
+
 kotlin {
     targets {
         final def iOSTarget = System.getenv('SDK_NAME')?.startsWith("iphoneos") ? presets.iosArm64 : presets.iosX64
@@ -12,9 +13,14 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             api 'org.jetbrains.kotlin:kotlin-stdlib-common'
+            implementation "io.ktor:ktor-client-core:$rootProject.ktorVer"
         }
         androidMain.dependencies {
             api 'org.jetbrains.kotlin:kotlin-stdlib'
+            implementation "io.ktor:ktor-client-android:$rootProject.ktorVer"
+        }
+        iosMain.dependencies {
+            implementation "io.ktor:ktor-client-ios:$rootProject.ktorVer"
         }
     }
 }

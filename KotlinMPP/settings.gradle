@@ -1,2 +1,2 @@
-include ':app', ':SharedModule'
-rootProject.name='My Application'
+include ':app'
+include ':SharedModule'
