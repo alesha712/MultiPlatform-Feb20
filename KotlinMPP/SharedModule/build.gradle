@@ -14,13 +14,16 @@ kotlin {
         commonMain.dependencies {
             api 'org.jetbrains.kotlin:kotlin-stdlib-common'
             implementation "io.ktor:ktor-client-core:$rootProject.ktorVer"
+            implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core-common:$rootProject.coroutinesVer"
         }
         androidMain.dependencies {
             api 'org.jetbrains.kotlin:kotlin-stdlib'
             implementation "io.ktor:ktor-client-android:$rootProject.ktorVer"
+            implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutinesVer"
         }
         iosMain.dependencies {
             implementation "io.ktor:ktor-client-ios:$rootProject.ktorVer"
+            implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core-native:$rootProject.coroutinesVer"
         }
     }
 }
