@@ -8,9 +8,12 @@ https://medium.com/dev-machina/multiplatform-programming-using-kotlin-native-a-m
 
 ## Known Issues
 - Ktor version 1.2.4 works with Kotlin version 1.3.50 and with coroutines version 1.3.0 and gradle 5.4.1
-- Changing versions results in gradlew build failling. 
+- Changing versions results in `./gradlew` build failling.
 - Upgrading versions requires Xcode 11
-- error : "More than one file was found with OS independent path 'META-INF/ktor-http.kotlin_module'" - fix this by adding the above code to app build.gradle:
+- The error: 
+ > More than one file was found with OS independent path 'META-INF/ktor-http.kotlin_module'
+
+   can be fixed by adding this code to app build.gradle:
 ~~~
 packagingOptions {
         exclude 'META-INF/DEPENDENCIES'
