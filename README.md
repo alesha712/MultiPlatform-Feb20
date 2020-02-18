@@ -10,7 +10,7 @@ __*Kotlin Multi platform - Jetbrains - main*__
 > https://github.com/ktorio/ktor/releases
 
 ## Known Issues
-- Ktor version 1.2.4 works with Kotlin version 1.3.50 and with coroutines version 1.3.0 and gradle 5.4.1
+- Ktor version 1.2.4 works with Kotlin version 1.3.50 and with coroutines version 1.3.0 and gradle 5.4.1 - this works with Xcode 10.3
 - Changing versions results in `./gradlew` build failling.
 - Upgrading versions requires Xcode 11
 - The error: 
