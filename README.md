@@ -2,6 +2,9 @@
  
 https://medium.com/dev-machina/multiplatform-programming-using-kotlin-native-a-mobile-developers-quest-part-2-c903fda4f23
 
+__*Kotlin Multi platform - Jetbrains - main*__
+>https://www.jetbrains.com/lp/mobilecrossplatform/
+
 ## Ktor
 *releases:*
 > https://github.com/ktorio/ktor/releases
