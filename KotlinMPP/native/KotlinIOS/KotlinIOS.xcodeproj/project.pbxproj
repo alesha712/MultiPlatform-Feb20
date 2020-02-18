@@ -14,8 +14,8 @@
 		19B0FD2823F591580028EEF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B0FD2623F591580028EEF1 /* LaunchScreen.storyboard */; };
 		19B0FD3323F591580028EEF1 /* KotlinIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0FD3223F591580028EEF1 /* KotlinIOSTests.swift */; };
 		19B0FD3E23F591580028EEF1 /* KotlinIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0FD3D23F591580028EEF1 /* KotlinIOSUITests.swift */; };
-		19BB72A723F91D8800B3E7C0 /* SharedModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BB72A623F91D8800B3E7C0 /* SharedModule.framework */; };
-		19BB72A823F91E5400B3E7C0 /* SharedModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19BB72A623F91D8800B3E7C0 /* SharedModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19BB72AE23FA792300B3E7C0 /* SharedModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BB72AD23FA792300B3E7C0 /* SharedModule.framework */; };
+		19BB72AF23FA792300B3E7C0 /* SharedModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19BB72AD23FA792300B3E7C0 /* SharedModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				19BB72A823F91E5400B3E7C0 /* SharedModule.framework in Embed Frameworks */,
+				19BB72AF23FA792300B3E7C0 /* SharedModule.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +63,7 @@
 		19B0FD3923F591580028EEF1 /* KotlinIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KotlinIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B0FD3D23F591580028EEF1 /* KotlinIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinIOSUITests.swift; sourceTree = "<group>"; };
 		19B0FD3F23F591580028EEF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19BB72A623F91D8800B3E7C0 /* SharedModule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SharedModule.framework; path = "../../SharedModule/build/xcode-frameworks/SharedModule.framework"; sourceTree = "<group>"; };
+		19BB72AD23FA792300B3E7C0 /* SharedModule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SharedModule.framework; path = "../../SharedModule/build/xcode-frameworks/SharedModule.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19BB72A723F91D8800B3E7C0 /* SharedModule.framework in Frameworks */,
+				19BB72AE23FA792300B3E7C0 /* SharedModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +95,7 @@
 		19B0FD1123F591540028EEF1 = {
 			isa = PBXGroup;
 			children = (
-				19BB72A623F91D8800B3E7C0 /* SharedModule.framework */,
+				19BB72AD23FA792300B3E7C0 /* SharedModule.framework */,
 				19B0FD1C23F591540028EEF1 /* KotlinIOS */,
 				19B0FD3123F591580028EEF1 /* KotlinIOSTests */,
 				19B0FD3C23F591580028EEF1 /* KotlinIOSUITests */,
@@ -288,7 +288,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"$SRCROOT/../../SharedModule/build/xcode-frameworks\"\n./gradlew :SharedModule:packForXCode -PXCODE_CONFIGURATION=${CONFIGURATION}\n";
+			shellScript = "cd $SRCROOT/../../SharedModule/build/xcode-frameworks\n./gradlew :SharedModule:packForXCode -PXCODE_CONFIGURATION=${CONFIGURATION}\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
