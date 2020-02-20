@@ -12,7 +12,7 @@ __*Kotlin Multi platform - Jetbrains - main*__
 ## Serialization
 *Kotlin cross-platform / multi-format reflectionless serialization:*
 >https://github.com/Kotlin/kotlinx.serialization
-*Kotlinx Serialization Release Notes:*
+### *Kotlinx Serialization Release Notes:*
 >https://github.com/Kotlin/kotlinx.serialization/releases
 
 ## Known Issues
