@@ -1,4 +1,5 @@
 apply plugin: 'kotlin-multiplatform'
+apply plugin: 'kotlinx-serialization'
 
 kotlin {
     targets {
@@ -14,12 +15,18 @@ kotlin {
         commonMain.dependencies {
             api 'org.jetbrains.kotlin:kotlin-stdlib-common'
             implementation "io.ktor:ktor-client-core:$rootProject.ktorVer"
+            implementation "io.ktor:ktor-client-json:$rootProject.ktorVer"
             implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core-common:$rootProject.coroutinesVer"
+            implementation "org.jetbrains.kotlinx:kotlinx-serialization-runtime-common:$rootProject.kotlix_serialization"
+
+            implementation "org.jetbrains.kotlin:kotlin-serialization:$rootProject.kotlin_version"
         }
         androidMain.dependencies {
             api 'org.jetbrains.kotlin:kotlin-stdlib'
             implementation "io.ktor:ktor-client-android:$rootProject.ktorVer"
+            implementation "io.ktor:ktor-client-json-native:$rootProject.ktorVer"
             implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutinesVer"
+            implementation "org.jetbrains.kotlinx:kotlinx-serialization-runtime:$rootProject.kotlix_serialization"
         }
         iosMain.dependencies {
             implementation "io.ktor:ktor-client-ios:$rootProject.ktorVer"
@@ -30,6 +37,7 @@ kotlin {
 configurations {
     compileClasspath
 }
+
 
 task packForXCode(type: Sync) {
     final File frameworkDir = new File(buildDir, "xcode-frameworks")

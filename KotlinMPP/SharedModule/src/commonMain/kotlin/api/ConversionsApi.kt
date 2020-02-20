@@ -8,12 +8,5 @@ import io.ktor.http.Url
 
 class ConversionsApi {
 
-    private val client = HttpClient()
-    private val baseUrl = Url("https://api.exchangeratesapi.io/latest")
-
-    suspend fun getLatestConversions(): String{
-        return client.get{
-            url(baseUrl.toString())
-        }
-    }
+    val baseUrl = Url("https://api.exchangeratesapi.io/latest")
 }
