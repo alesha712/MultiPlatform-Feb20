@@ -13,6 +13,8 @@ actual fun platformName(): String {
     UIDevice.currentDevice.systemVersion
 }
 
+internal actual val ApplicationDispatcher: CoroutineDispatcher = NsQueueDispatcher(dispatch_get_main_queue())
+
 internal class NsQueueDispatcher(private val dispatchQueue: dispatch_queue_t
 
 ) : CoroutineDispatcher(){
@@ -23,5 +25,3 @@ internal class NsQueueDispatcher(private val dispatchQueue: dispatch_queue_t
         }
     }
 }
-
-internal actual val ApplicationDispatcher: kotlinx.coroutines.CoroutineDispatcher = NsQueueDispatcher(dispatch_get_main_queu())

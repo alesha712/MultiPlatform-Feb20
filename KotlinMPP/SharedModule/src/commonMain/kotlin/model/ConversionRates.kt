@@ -6,6 +6,6 @@ import kotlinx.serialization.Serializable
 data class ConversionRates(
 
 	val date: String? = null,
-	val rates: Rates? = null,
+	val rates: HashMap<String, String>? = null,
 	val base: String? = null
 )

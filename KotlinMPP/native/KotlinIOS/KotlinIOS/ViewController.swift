@@ -17,8 +17,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         lblTitle.text = CommonKt.createApplicationScreenMessage()
+        
+        ConversionsRepo().getConversionRates{ (result) in
+            DispatchQueue.main.async {
+                self.lblTitle.text = result.base
+            }
+        }
+
     }
-
-
 }
 

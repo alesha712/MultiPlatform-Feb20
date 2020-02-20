@@ -30,7 +30,13 @@ kotlin {
         }
         iosMain.dependencies {
             implementation "io.ktor:ktor-client-ios:$rootProject.ktorVer"
+            implementation "io.ktor:ktor-client-core-native:$rootProject.ktorVer"
+            implementation "io.ktor:ktor-client-json-native:$rootProject.ktorVer"
+
             implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core-native:$rootProject.coroutinesVer"
+
+            implementation "org.jetbrains.kotlinx:kotlinx-serialization-runtime-native:$rootProject.kotlix_serialization"
+
         }
     }
 }
