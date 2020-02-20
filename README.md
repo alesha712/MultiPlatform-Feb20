@@ -9,10 +9,16 @@ __*Kotlin Multi platform - Jetbrains - main*__
 *releases:*
 > https://github.com/ktorio/ktor/releases
 
+## Serialization
+*Kotlin cross-platform / multi-format reflectionless serialization:*
+>https://github.com/Kotlin/kotlinx.serialization
+*Kotlinx Serialization Release Notes:*
+>https://github.com/Kotlin/kotlinx.serialization/releases
+
 ## Known Issues
 - Ktor version 1.2.4 works with Kotlin version 1.3.50 and with coroutines version 1.3.0 and gradle 5.4.1 - this works with Xcode 10.3
 - Changing versions results in `./gradlew` build failling.
-- Upgrading versions requires Xcode 11
+- Upgrading kotlin version, ktor, and gradle versions requires Xcode 11
 - The error: 
  > More than one file was found with OS independent path 'META-INF/ktor-http.kotlin_module'
 
