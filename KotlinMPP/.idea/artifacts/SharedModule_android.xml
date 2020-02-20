@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="SharedModule-android">
-    <output-path>$PROJECT_DIR$/SharedModule/build/libs</output-path>
+    <output-path>E:\GitHub\110220\KotlinMPP\SharedModule\build\libs</output-path>
     <root id="archive" name="SharedModule-android.jar">
       <element id="module-output" name="SharedModule_androidMain" />
     </root>
