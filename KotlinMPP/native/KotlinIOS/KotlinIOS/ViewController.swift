@@ -21,6 +21,9 @@ class ViewController: UIViewController {
         ConversionsRepo().getConversionRates{ (result) in
             DispatchQueue.main.async {
                 self.lblTitle.text = result.base
+                if let dict = result.rates as? Dictionary<String,String> {
+                    print(dict)
+                }
             }
         }
 

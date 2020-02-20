@@ -24,7 +24,8 @@ class MainActivity : AppCompatActivity() {
             CoroutineScope(Dispatchers.Main).launch {
                 Log.d("alex", "this is before coroutines")
                 try {
-                    Log.d("alex", "getConversions success: ${it.base}")
+                    Log.d("alex", "getConversions success: ${it.rates}")
+                    Log.d("alex", "getConversions size: ${it.rates?.keys?.size}")
                 }catch (e: Exception){
                     Log.d("alex", "getConversions success: error")
                 }
