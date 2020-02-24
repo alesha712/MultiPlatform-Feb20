@@ -9,3 +9,4 @@ fun createApplicationScreenMessage() : String {
     return "Hello World, from ${platformName()}"
 }
 
+expect fun makeLog(text: String)

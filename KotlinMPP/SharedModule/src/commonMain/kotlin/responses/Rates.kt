@@ -1,4 +1,4 @@
-package model
+package com.hqs.alx.sharedmodule.responses
 
 import kotlinx.serialization.Serializable
 

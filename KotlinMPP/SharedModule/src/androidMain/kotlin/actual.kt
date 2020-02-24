@@ -13,3 +13,7 @@ actual fun platformName(): String {
 //   return ""
 //}
 internal actual val ApplicationDispatcher: CoroutineDispatcher = Dispatchers.Default
+
+actual fun makeLog(text: String) {
+    println("Alex: $text" )
+}

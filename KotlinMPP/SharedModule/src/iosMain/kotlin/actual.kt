@@ -25,3 +25,6 @@ internal class NsQueueDispatcher(private val dispatchQueue: dispatch_queue_t
         }
     }
 }
+
+actual fun makeLog(text: String) {
+}
