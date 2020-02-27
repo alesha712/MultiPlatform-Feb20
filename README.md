@@ -15,6 +15,10 @@ __*Kotlin Multi platform - Jetbrains - main*__
 ### *Kotlinx Serialization Release Notes:*
 >https://github.com/Kotlin/kotlinx.serialization/releases
 
+## Xcode plugin for kotlin
+- https://medium.com/hackernoon/kotlin-xcode-plugin-64f52ff8dc2a
+- https://github.com/touchlab/xcode-kotlin/releases
+
 ## Known Issues
 - Ktor version 1.2.4 works with Kotlin version 1.3.50 and with coroutines version 1.3.0 and gradle 5.4.1 - this works with Xcode 10.3
 - Changing versions results in `./gradlew` build failling.
@@ -42,4 +46,6 @@ packagingOptions {
 cd $SRCROOT/../../SharedModule/build/xcode-frameworks
 ./gradlew :SharedModule:packForXCode -PXCODE_CONFIGURATION=${CONFIGURATION}
 ~~~
+
+
 
